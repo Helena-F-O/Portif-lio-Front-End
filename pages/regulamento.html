@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <title>
+    Material Dashboard 2 by Creative Tim
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/material-dashboard.css?v=3.1.0" rel="stylesheet" />
+  <!-- Nepcha Analytics (nepcha.com) -->
+  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+  <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+</head>
+
+<body class="g-sidenav-show bg-gray-200">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
+        <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold text-white">On Hour</span>
+      </a>
+    </div>
+    <hr class="horizontal light mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../pages/dashboard.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">dashboard</i>
+            </div>
+            <span class="nav-link-text ms-1">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../pages/tables.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">table_view</i>
+            </div>
+            <span class="nav-link-text ms-1">Certificados</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../pages/relatorio.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">receipt_long</i>
+            </div>
+            <span class="nav-link-text ms-1">Relatório</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white active bg-gradient-primary" href="../pages/regulamento.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">view_in_ar</i>
+            </div>
+            <span class="nav-link-text ms-1">Regulamento</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../pages/notifications.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">notifications</i>
+            </div>
+            <span class="nav-link-text ms-1">Notifications</span>
+          </a>
+        </li>
+        <li class="nav-item mt-3">
+          <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Account pages</h6>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../pages/profile.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">person</i>
+            </div>
+            <span class="nav-link-text ms-1">Profile</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../pages/sign-in.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">login</i>
+            </div>
+            <span class="nav-link-text ms-1">Sign In</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../pages/sign-up.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">assignment</i>
+            </div>
+            <span class="nav-link-text ms-1">Sign Up</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <div class="main-content position-relative max-height-vh-100 h-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur" data-scroll="true">
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
+            <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li>
+            <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Profile</li>
+          </ol>
+          <h6 class="font-weight-bolder mb-0">Profile</h6>
+        </nav>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid px-2 px-md-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card my-4">
+            <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+              <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                <h6 class="text-white text-capitalize ps-3">Regulamento</h6>
+              </div>
+            </div>
+            <div class="card-body px-0 pb-2">
+              <div class="table-responsive p-0">
+                <table class="table align-items-center justify-content-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Nome</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Descrição Completa</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Horas Máximas</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Requisitos</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Disciplinas Isoladas</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Disciplinas isoladas, realizadas em outro curso da</p>
+                        <p class="text-sm font-weight-bold mb-0">Instituição ou fora dela, que venham complementar a sua</p>
+                        <p class="text-sm font-weight-bold mb-0">formação pessoal e profissional.</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">60</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Aprovação</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Participação de Conferências</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Participação em conferências,palestras, feiras, seminários,</p>
+                        <p class="text-sm font-weight-bold mb-0">simpósios e congressos relacionados à área da Engenharia de</p>
+                        <p class="text-sm font-weight-bold mb-0">Software e Tecnologia de Informação e Comunicação.</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">60</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Certificado de Participação e Cronograma</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Participação como Ouvinte de Defesa</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Participação como ouvinte em defesas de trabalhos de </p>
+                        <p class="text-sm font-weight-bold mb-0">Conclusão de Curso, de Estágio, dissertações de mestrado </p>
+                        <p class="text-sm font-weight-bold mb-0">e teses de doutorado.</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">1h - TCC Estágio<br>
+                        2h - Defessa de Dissertação<br>
+                        4h - Defesa de Tese<br>
+                        15h - Limite Total</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Certificado de Participação</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Disciplinas de Programas de Extensão</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Disciplinas cursadas em programas de extensão relacionados<br>à área da Tecnologia da Informação e Comunicação (TIC).</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">30</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Certificado com Definição de Carga Horária</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Cursos e Atividades de Extensão</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Cursos e outras atividades de extensão realizados,<br> relacionados à área da Tecnologia da Informação <br>e Comunicação (TIC).</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">60</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Certificado com Definição de Carga Horária</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Visitas Técnicas e Viagens de Estudo</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Visitas técnicas e viagens de estudo não pertencentes <br>aos PE’s das disciplinas do curso de Bacharelado de <br>Engenharia de Software.</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">20</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Declaração do Responsável pela Organização <br>com Determinação das Horas</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Viagens de Intercâmbio</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Viagens de Intercâmbio</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">90</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Declaração do Setor de Relações Internacionais</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Exercício de Monitoria</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Exercício de Monitoria</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">30</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Declaração da Coordenação do Exercício <br>de Monitoria</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Participação em Pesquisas Institucionais</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Exercício de Monitoria</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">30</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Declaração do Setor Responsável Pela <br>Ação com Determinação da Carga Horária</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Participação em Iniciação Cientifica</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Participação em projetos de iniciação científica.</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">40-Por Projeto</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Declaração de Conclusão da PROINPES</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Participação em Projetos Sociais e Comunitários</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Participação em projetos sociais, <br> atividades comunitárias e acadêmicas</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">40</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Atestado de Participação e Relatório</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Artigos Cientificos Publicados da Area</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Artigos científicos publicados <br> relacionados à área de Tecnologia da Informação <br>e Comunicação (TIC).</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">60 - Por Artigo</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Artigo Publicado</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Apresentação de Pesquisa em <br> Evento Cientificos</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Apresentação de pesquisas em eventos científicos</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">60 - Por Pesquisa</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Pesquisa Apresentada com Certificação</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Participação em Concursos de Monografias</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Participação em concursos de monografias</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">60 - Por Monografia</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Monografia Aprovada</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Representante de Turma ou <br> Representação Estudantil</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Atuação como representante de turma ou em órgão</br>de representação estudantil ou institucional.</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">10 - Não Acumulativo <BR> 1 Semestre</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Monografia Aprovada</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2">
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm">Participação como Mesario de <br> Eleições e Desfiles Civicos</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-sm font-weight-bold mb-0">Participação como mesário em eleições eleitorais e<br> participação em desfiles cívicos representando o <br> Centro Universitário Católica de Santa Catarina em Joinville.</p>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">15</span>
+                      </td>
+                      <td>
+                        <span class="text-xs font-weight-bold">Declaração de Participação e Relatório</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer py-4  ">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-lg-between">
+          <div class="col-lg-6 mb-lg-0 mb-4">
+            <div class="copyright text-center text-sm text-muted text-lg-start">
+              © 2024
+              made with <i class="fa fa-heart"></i> by
+              <a href="https://github.com/Helena-F-O" class="font-weight-bold" target="_blank">Helena Felicia de Oliveira Avelino</a>
+              for a Portifólio Project.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/material-dashboard.min.js?v=3.1.0"></script>
+</body>
+
+</html>
